@@ -7,4 +7,4 @@
 # All rights reserved - Do Not Redistribute
 #
 
-include_recipe "opsworks-mongodb::replicaset"
+include_recipe "mongodb::replicaset"
