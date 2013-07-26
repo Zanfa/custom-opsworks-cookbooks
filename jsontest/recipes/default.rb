@@ -3,7 +3,7 @@ template "/home/ubuntu/ips" do
   mode 777
   owner "ubuntu"
   variables({
-    instances: node[:opsworks][:layers][:jsontest][:instances]
+    :instances => node[:opsworks][:layers][:jsontest][:instances]
   })
 end
   
