@@ -1,3 +1,5 @@
 
 The list of IPs in this layer:
-<%= @json %>
+<% @instances.each do |name, instance| %>
+* <%= instance[:private_ip] %>
+<% end %>
