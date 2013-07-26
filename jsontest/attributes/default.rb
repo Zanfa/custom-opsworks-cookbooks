@@ -1,1 +1,0 @@
-node[:opsworks][:layers][:jsontest][:instances][:test][:ip] = "123"
