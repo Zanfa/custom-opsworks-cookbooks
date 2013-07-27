@@ -1,5 +1,5 @@
 
 The list of IPs in this layer:
-<% @opsworks[:layers][:jsontest][:instances].each do |name, instance| %>
+<% @instances.each do |name, instance| %>
 * <%= instance[:private_ip] %>
 <% end %>
