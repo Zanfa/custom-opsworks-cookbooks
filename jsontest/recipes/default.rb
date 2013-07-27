@@ -15,7 +15,7 @@ require "json"
    owner "ubuntu"
    variables({ 
      :json => node[:opsworks][:layers][:jsontest][:instances].to_json,
-     :instaces => node[:opsworks][:layers][:jsontest][:instances]
+     :instances => node[:opsworks][:layers][:jsontest][:instances]
    })
  end
 # end
