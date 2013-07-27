@@ -14,8 +14,8 @@ require "json"
    source "ips.erb"
    owner "ubuntu"
    variables( 
-     :json => node[:opsworks][:layers][:jsontest][:instances].to_json,
-     :instances => node[:opsworks][:layers][:jsontest][:instances]
+     json: node[:opsworks][:layers][:jsontest][:instances].to_json,
+     instances: node[:opsworks][:layers][:jsontest][:instances]
    )
  end
 # end
