@@ -13,9 +13,9 @@ require "json"
  template "/home/ubuntu/ips" do
    source "ips.erb"
    owner "ubuntu"
-   variables({ 
+   variables( 
      :json => node[:opsworks][:layers][:jsontest][:instances].to_json,
      :instances => node[:opsworks][:layers][:jsontest][:instances]
-   })
+   )
  end
 # end
